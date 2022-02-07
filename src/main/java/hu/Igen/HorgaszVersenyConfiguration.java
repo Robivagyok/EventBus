@@ -1,5 +1,6 @@
 package hu.Igen;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,4 +11,11 @@ public class HorgaszVersenyConfiguration {
     public HorgaszVerseny horgaszVerseny(){
         return new HorgaszVerseny();
     }
+
+    @Autowired
+    public Fisher fisher(){
+        return new Fisher();
+    }
+
+
 }
